@@ -21,15 +21,27 @@ FriendlyEats.prototype.addRestaurant = function(data) {
 };
 
 FriendlyEats.prototype.getAllRestaurants = function(render) {
-  /*
-    TODO: Retrieve list of restaurants
-  */
+  var query = firebase.firestore()
+  .collection('restaurants')
+  .orderBy('avgRating', 'desc')
+  .limit(50);
+  console.log(query);
+  console.log(render);
+  this.getDocumentsInQuery(query, render);
 };
 
 FriendlyEats.prototype.getDocumentsInQuery = function(query, render) {
-  /*
-    TODO: Render all documents in the provided query
-  */
+  query.onSnapshot(function(snapshot) {
+    console.log(snapshot);
+    if (!snapshot.size) return render();
+
+    snapshot.docChanges.forEach(function(change) {
+      if (change.type === 'added') {
+        console.log("added");
+        render(change.doc);
+      }
+    });
+  });
 };
 
 FriendlyEats.prototype.getRestaurant = function(id) {
