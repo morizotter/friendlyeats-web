@@ -1,32 +1,41 @@
-[debug] [2018-03-11T05:55:47.542Z] ----------------------------------------------------------------------
-[debug] [2018-03-11T05:55:47.544Z] Command:       /Users/moritanaoki/.nodebrew/node/v8.10.0/bin/node /Users/moritanaoki/.nodebrew/current/bin/firebase serve
-[debug] [2018-03-11T05:55:47.544Z] CLI Version:   3.17.6
-[debug] [2018-03-11T05:55:47.544Z] Platform:      darwin
-[debug] [2018-03-11T05:55:47.544Z] Node Version:  v8.10.0
-[debug] [2018-03-11T05:55:47.545Z] Time:          Sun Mar 11 2018 14:55:47 GMT+0900 (JST)
-[debug] [2018-03-11T05:55:47.545Z] ----------------------------------------------------------------------
+[debug] [2018-03-11T06:14:25.630Z] ----------------------------------------------------------------------
+[debug] [2018-03-11T06:14:25.632Z] Command:       /Users/moritanaoki/.nodebrew/node/v8.10.0/bin/node /Users/moritanaoki/.nodebrew/current/bin/firebase serve
+[debug] [2018-03-11T06:14:25.632Z] CLI Version:   3.17.6
+[debug] [2018-03-11T06:14:25.632Z] Platform:      darwin
+[debug] [2018-03-11T06:14:25.632Z] Node Version:  v8.10.0
+[debug] [2018-03-11T06:14:25.632Z] Time:          Sun Mar 11 2018 15:14:25 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:25.632Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-03-11T05:55:47.555Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-03-11T05:55:47.555Z] > authorizing via signed-in user
-[debug] [2018-03-11T05:55:47.557Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/friendlyeats-web-21859  
+[debug] [2018-03-11T06:14:25.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-11T06:14:25.644Z] > authorizing via signed-in user
+[debug] [2018-03-11T06:14:25.646Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-11T06:14:25.646Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/AEuPk-tKYfg3Xz7xj2TmyrkDEmXTvKwpjAQyNIjwikeCNVkEBdUDsfWEBXH7jy_b',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Mar 11 2018 15:14:25 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:26.816Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T06:14:26.839Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/friendlyeats-web-21859  
   
- Sun Mar 11 2018 14:55:47 GMT+0900 (JST)
-[debug] [2018-03-11T05:55:49.060Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-11T05:55:49.061Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/friendlyeats-web-21859/tokens  
+ Sun Mar 11 2018 15:14:26 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:28.089Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T06:14:28.090Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/friendlyeats-web-21859/tokens  
   
- Sun Mar 11 2018 14:55:49 GMT+0900 (JST)
-[debug] [2018-03-11T05:55:50.529Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-11T05:55:50.530Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-web-21859  
+ Sun Mar 11 2018 15:14:28 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:29.173Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T06:14:29.174Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-web-21859  
   
- Sun Mar 11 2018 14:55:50 GMT+0900 (JST)
-[debug] [2018-03-11T05:55:51.905Z] <<< HTTP RESPONSE 200
+ Sun Mar 11 2018 15:14:29 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:30.624Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/moritanaoki/dev/github/friendlyeats-web'...
 [info] 
-[debug] [2018-03-11T05:55:51.907Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/949320505546/clients/_:getWebAppConfig  
+[debug] [2018-03-11T06:14:30.626Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/949320505546/clients/_:getWebAppConfig  
   
- Sun Mar 11 2018 14:55:51 GMT+0900 (JST)
-[debug] [2018-03-11T05:55:53.292Z] <<< HTTP RESPONSE 200
+ Sun Mar 11 2018 15:14:30 GMT+0900 (JST)
+[debug] [2018-03-11T06:14:32.160Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
 
